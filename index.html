@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rating Component -|- Vaaakoo</title>
+  <link rel="stylesheet" href="./styles/output.css" />
+</head>
+
+<body class="bg-VeryDarkBlue font-overpass text-White">
+  <main class="flex h-screen items-center justify-center">
+    <!-- main card -->
+    <div
+      class="selectRatingPage bg-DarkBlue max-w-[22rem] rounded-3xl bg-gradient-to-t from-[#171E28] to-[#212830] p-9 transition-opacity md:max-w-[25rem]">
+      <img src="./images/icon-star.svg" alt="" class="rounded-full bg-[#262F38] p-3" />
+      <h1 class="mb-3 mt-7 text-2xl font-bold">How did we do?</h1>
+      <p class="text-MediumGrey mb-7 text-[0.85rem]">Please let us know how we did with your support request. All
+        feedback is appreciated to help us improve our offering!</p>
+      <div class="mb-6 flex justify-between">
+        <div
+          class="1 ratingNumber text-MediumGrey bg-[#262F38] text-base hover:-translate-y-1 hover:scale-110  duration-300">
+          1</div>
+        <div
+          class="2 ratingNumber text-MediumGrey bg-[#262F38] text-base hover:-translate-y-1 hover:scale-110  duration-300">
+          2</div>
+        <div
+          class="3 ratingNumber text-MediumGrey bg-[#262F38] text-base hover:-translate-y-1 hover:scale-110  duration-300">
+          3</div>
+        <div
+          class="4 ratingNumber text-MediumGrey bg-[#262F38] text-base hover:-translate-y-1 hover:scale-110  duration-300">
+          4</div>
+        <div
+          class="5 ratingNumber text-MediumGrey bg-[#262F38] text-base hover:-translate-y-1 hover:scale-110  duration-300">
+          5</div>
+      </div>
+
+      <button
+        class="bg-Orange hover:bg-White hover:text-Orange block w-full rounded-full pt-3 pb-2 text-sm font-bold tracking-widest text-white  duration-300"
+        onclick="toggleButton()">SUBMIT</button>
+    </div>
+
+    <!-- hidden card -->
+
+    <div
+      class="showRatingPage bg-DarkBlue hidden max-w-[22rem] rounded-3xl bg-gradient-to-t from-[#171E28] to-[#212830] p-9 transition-opacity md:max-w-[25rem]">
+      <ion-icon name="chevron-back-outline" class="absolute cursor-pointer rounded-full bg-[#262F38] p-3"
+        onclick="toggleButton()"></ion-icon>
+      <img src="./images/illustration-thank-you.svg" class="mx-auto w-36" alt="" />
+
+      <div class="text-Orange mx-auto mt-7 w-fit rounded-full bg-[#262F38] px-4 py-1 pt-2 text-sm">You selected <span
+          class="confirmedRating"></span> out of 5</div>
+      <h1 class="mb-3 mt-7 text-center text-2xl font-bold">Thank you!</h1>
+      <p class="text-MediumGrey mb-[1.2rem] text-center text-[0.85rem]">We appreciate you taking the time to give a
+        rating. If you ever need more support, don’t hesitate to get in touch!</p>
+    </div>
+  </main>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
