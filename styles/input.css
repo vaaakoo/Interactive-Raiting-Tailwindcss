@@ -4,16 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
-.ratingNumber {
-  border-radius: 50%;
-  width: 42px;
-  height: 42px;
-  padding: 10px;
-  text-align: center;
-  cursor: pointer;
-}
 
-.ratingNumber:hover {
-  background: hsl(25, 97%, 53%);
-  color: white;
-}
+.ratingNumber {
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .ratingNumber:hover {
+    background: hsl(25, 97%, 53%);
+    color: white;
+  }
